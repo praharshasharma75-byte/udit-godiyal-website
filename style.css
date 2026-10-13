@@ -25,3 +25,11 @@
 
 /* Consistent grids and restrained spacing */
 .spotify-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:48px 28px;align-items:start}.artist-card{max-width:none}.artist-card h3{font-size:24px;line-height:1.3;min-height:63px;margin:0 0 20px;display:flex;align-items:flex-end}.artist-card>.section-label{min-height:34px;margin-bottom:10px}.artist-note{font-size:14px;line-height:1.8;color:#bcbdb4;margin:22px 0 0}.album-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;align-items:start}.album-grid img,.album-grid .aks-project>img{height:auto;aspect-ratio:1/1;max-height:none;object-fit:contain;background:#171916}.album-grid h3{font-size:24px;line-height:1.35}.work .artist-feature{grid-template-columns:1fr 1fr;gap:55px}.artist-feature+.artist-feature{border-top:1px solid #777b7130;padding-top:65px;margin-top:65px}.about .youtube-row,.about .soundcloud-row{width:100%}.about .youtube-channel{width:100%;justify-content:flex-start}.about .youtube-channel>span:last-child{margin-left:auto}.section-heading{margin-bottom:35px}.spotify-grid .text-link{line-height:1.7}.studio-footer>.site-credit{width:auto}.work h2,.album-section h2,.films h2{font-size:clamp(38px,5vw,70px)}@media(min-width:761px) and (max-width:1100px){.spotify-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:760px){.spotify-grid,.album-grid{grid-template-columns:1fr;gap:42px}.artist-card h3{min-height:0;margin-bottom:20px}.artist-card>.section-label{min-height:0}.work .artist-feature{grid-template-columns:1fr;gap:28px}.artist-feature+.artist-feature{margin-top:45px;padding-top:45px}.album-grid img,.album-grid .aks-project>img{max-height:none}.studio-footer>.site-credit{width:100%}}
+
+/* Portfolio refinements */
+.album-grid img.selective-artwork{object-fit:cover;object-position:center;}
+.work .third-horizon-feature{margin-top:0;align-items:center;}
+.third-horizon-feature .section-heading{margin:0 0 32px;}
+.third-horizon-feature h2{font-size:clamp(38px,4.5vw,66px);}
+.third-horizon-feature h3{margin:0 0 20px;}
+@media(max-width:760px){.third-horizon-feature>div{grid-row:1;}.third-horizon-feature .section-heading{margin-bottom:28px;}}
