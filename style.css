@@ -33,3 +33,11 @@
 .third-horizon-feature h2{font-size:clamp(38px,4.5vw,66px);}
 .third-horizon-feature h3{margin:0 0 20px;}
 @media(max-width:760px){.third-horizon-feature>div{grid-row:1;}.third-horizon-feature .section-heading{margin-bottom:28px;}}
+
+/* Third Horizon: heading above the artwork, with balanced story text */
+.work>.work-heading{display:block;text-align:left;margin:0 0 36px;}
+.work>.work-heading h2{margin:0;}
+.work .third-horizon-feature{align-items:start;margin-top:0;}
+.third-horizon-feature>div>.section-label{margin-bottom:18px;}
+.third-horizon-feature p{margin:0 0 18px;}
+@media(max-width:760px){.third-horizon-feature>div{grid-row:auto;}.work>.work-heading{margin-bottom:28px;}}
