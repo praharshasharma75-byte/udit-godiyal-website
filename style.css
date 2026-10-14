@@ -1299,3 +1299,15 @@ p:not(.section-label) {
     min-height: 0;
   }
 }
+
+/* Reduce vertical gaps on larger screens only */
+@media (min-width: 761px) {
+  .studio > .section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .studio > .about.section {
+    padding-top: 30px;
+  }
+}
