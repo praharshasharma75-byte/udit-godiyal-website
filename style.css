@@ -1325,3 +1325,7 @@ p:not(.section-label) {
     margin-top: 0;
   }
 }
+.about .youtube-channel {
+  width: 360px;
+  max-width: 100%;
+}
