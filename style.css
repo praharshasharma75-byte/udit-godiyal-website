@@ -1303,11 +1303,11 @@ p:not(.section-label) {
 /* Reduce vertical gaps on larger screens only */
 @media (min-width: 761px) {
   .studio > .section {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .studio > .about.section {
-    padding-top: 30px;
+    padding-top: 50px;
   }
 }
