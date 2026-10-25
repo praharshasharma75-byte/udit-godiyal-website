@@ -9,14 +9,18 @@
       content="Udit Godiyal — music producer and audio engineer in Leeds. Music production, sound design, mixing and mastering."
     />
     <meta name="theme-color" content="#111210" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="app.js" defer></script>
-    <link rel="icon" type="image/png" href="assets/favicon.png" />
-  </head>
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/app.js" defer></script>
+    <link rel="icon" type="image/png" href="/assets/favicon.png" />
+  <script>
+const destinations = {about: '/about/', listen: '/work/', work: '/work/', contact: '/contact/'};
+location.replace(destinations[location.hash.slice(1)] || (location.hash ? '/about/' + location.hash : '/about/'));
+</script>
+</head>
   <body class="">
     <a class="skip" href="#main">Skip to content</a>
     <header>
-      <a class="brand" href="index.html" aria-label="Udit Godiyal home"
+      <a class="brand" href="/" aria-label="Udit Godiyal home"
         ><svg
           class="monogram"
           viewBox="0 0 88 58"
@@ -37,9 +41,9 @@
           /></svg
       ></a>
       <nav aria-label="Main navigation">
-        <a href="index.html">Home</a><a href="studio.html#about">About</a
-        ><a href="studio.html#listen">Work</a
-        ><a href="studio.html#contact">Let’s talk <span>↗</span></a>
+        <a href="/">Home</a><a href="/about/">About</a
+        ><a href="/work/">Work</a
+        ><a href="/contact/">Let’s talk <span>↗</span></a>
       </nav>
     </header>
     <main id="main" class="studio">
@@ -61,7 +65,7 @@
               Huddersfield, developing my practice across music production,
               sound design and audio engineering.
             </p>
-            <a class="text-link" href="#contact"
+            <a class="text-link" href="/contact/"
               >Let’s make something together ↗</a
             >
             <div class="youtube-row">
@@ -119,7 +123,7 @@
           </div>
           <figure>
             <img
-              src="assets/portrait.jpg"
+              src="/assets/portrait.jpg"
               alt="Udit Godiyal"
               fetchpriority="high"
             />
@@ -371,7 +375,7 @@
         </div>
         <article class="feature artist-feature third-horizon-feature">
           <img
-            src="assets/third-horizon-arike.jpg"
+            src="/assets/third-horizon-arike.jpg"
             alt="Arike — Third Horizon release artwork"
             loading="lazy"
           />
@@ -406,7 +410,7 @@
         </article>
         <article class="feature artist-feature">
           <img
-            src="assets/real-outcasts-art.jpeg"
+            src="/assets/real-outcasts-art.jpeg"
             alt="Real Outcasts artwork"
             loading="lazy"
           />
@@ -435,7 +439,7 @@
         <div class="album-grid">
           <article class="aks-project">
             <img
-              src="assets/aks-artwork.jpeg"
+              src="/assets/aks-artwork.jpeg"
               alt="Aks album artwork"
               loading="lazy"
             />
@@ -450,7 +454,7 @@
           <article>
             <img
               class="selective-artwork"
-              src="assets/selective-puzzles.png"
+              src="/assets/selective-puzzles.png"
               alt="Selective Puzzles album artwork"
               loading="lazy"
             />
@@ -459,7 +463,7 @@
           </article>
           <article>
             <img
-              src="assets/ashtrays.png"
+              src="/assets/ashtrays.png"
               alt="Ashtrays and Heartbreaks artwork"
               loading="lazy"
             />
@@ -486,9 +490,9 @@
               poster="assets/zjqdQ6GRHqE.jpg"
               aria-label="Kandanar Kelan"
             >
-              <source src="assets/kandanar-kelan.mp4" type="video/mp4" />
+              <source src="/assets/kandanar-kelan.mp4" type="video/mp4" />
               Your browser does not support video playback.
-              <a href="assets/kandanar-kelan.mp4">Watch Kandanar Kelan</a>.
+              <a href="/assets/kandanar-kelan.mp4">Watch Kandanar Kelan</a>.
             </video>
             <h3>Kandanar Kelan</h3>
             <p>Portfolio film</p>
@@ -501,9 +505,9 @@
               poster="assets/12-Pu8ieipY.jpg"
               aria-label="Destiny"
             >
-              <source src="assets/destiny.mp4" type="video/mp4" />
+              <source src="/assets/destiny.mp4" type="video/mp4" />
               Your browser does not support video playback.
-              <a href="assets/destiny.mp4">Watch Destiny</a>.
+              <a href="/assets/destiny.mp4">Watch Destiny</a>.
             </video>
             <h3>Destiny</h3>
             <p>University project</p>
@@ -516,9 +520,9 @@
               poster="assets/50xReR6tKpw.jpg"
               aria-label="Spring Film"
             >
-              <source src="assets/spring-film.mp4" type="video/mp4" />
+              <source src="/assets/spring-film.mp4" type="video/mp4" />
               Your browser does not support video playback.
-              <a href="assets/spring-film.mp4">Watch Spring Film</a>.
+              <a href="/assets/spring-film.mp4">Watch Spring Film</a>.
             </video>
             <h3>Spring Film</h3>
             <p>University project</p>
@@ -530,7 +534,7 @@
               preload="none"
               poster="assets/less-human.jpg"
             >
-              <source src="assets/less-than-human.mp4" type="video/mp4" />
+              <source src="/assets/less-than-human.mp4" type="video/mp4" />
             </video>
             <h3>Less Than Human</h3>
             <p>University project · Sound design & ADR</p>
@@ -546,7 +550,7 @@
         <div class="client-grid">
           <figure>
             <img
-              src="assets/ipl.jpg"
+              src="/assets/ipl.jpg"
               alt="IPL portfolio project"
               loading="lazy"
             />
@@ -554,7 +558,7 @@
           </figure>
           <figure>
             <img
-              src="assets/okaya.jpg"
+              src="/assets/okaya.jpg"
               alt="Okaya portfolio project"
               loading="lazy"
             />
@@ -562,7 +566,7 @@
           </figure>
           <figure>
             <img
-              src="assets/microtek.png"
+              src="/assets/microtek.png"
               alt="Microtek portfolio project"
               loading="lazy"
             />
@@ -571,7 +575,7 @@
         </div>
         <article class="feature">
           <img
-            src="assets/live.jpeg"
+            src="/assets/live.jpeg"
             alt="No Bounds live sound event"
             loading="lazy"
           />
@@ -666,7 +670,7 @@
             </p>
             <img
               class="live-photo"
-              src="assets/live.jpeg"
+              src="/assets/live.jpeg"
               alt="Live sound production"
               loading="lazy"
             />
@@ -692,7 +696,7 @@
      
     </main>
     <footer class="studio-footer">
-      <a class="brand" href="index.html"
+      <a class="brand" href="/"
         ><svg
           class="monogram"
           viewBox="0 0 88 58"
