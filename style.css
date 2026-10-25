@@ -1361,3 +1361,15 @@ p:not(.section-label) {
     width: 24px;
   }
 }
+
+/* Give the contact link its own line */
+.about-grid > div > .text-link {
+  display: table;
+}
+
+/* Make both social buttons less tall */
+@media (min-width: 761px) {
+  .about .youtube-channel {
+    min-height: 56px;
+  }
+}
