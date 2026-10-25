@@ -1329,3 +1329,35 @@ p:not(.section-label) {
   width: 360px;
   max-width: 100%;
 }
+/* Move the heading to the left */
+.work > .work-heading {
+  text-align: left;
+}
+
+/* Place YouTube and SoundCloud side by side on larger screens */
+@media (min-width: 761px) {
+  .about .youtube-row,
+  .about .soundcloud-row {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(50% - 10px);
+    margin-top: 24px;
+    clear: none;
+  }
+
+  .about .youtube-row {
+    margin-right: 14px;
+  }
+
+  .about .youtube-channel {
+    width: 100%;
+    min-height: 80px;
+    box-sizing: border-box;
+    padding: 12px;
+    gap: 8px;
+  }
+
+  .about .youtube-channel svg {
+    width: 24px;
+  }
+}
